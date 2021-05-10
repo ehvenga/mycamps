@@ -1,5 +1,5 @@
 # campsite
-The campsite is my first project building a web application called "Yelpcamp". Yelpcamp is web-app where user generated content about outdoor activities (mainly camping) is hosted and maintained, allowing features such as posting a listing, editing and commenting on it. 
+The campsite project is my first project building a web application called "Yelpcamp". Yelpcamp is web-app where user generated content about outdoor activities (mainly camping) is hosted and maintained, allowing features such as posting a listing, editing and commenting on it. 
 
 # npm i
 to install the dependicies required to run the project run npm i in your node.js terminal
