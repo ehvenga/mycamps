@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="/css/newcampground.css">
+{{>navbar}}
+<div class="container mt-5">
+    <p class="text-center fs-1">Login</p>
+    <div class="d-flex justify-content-center">
+        <form action="/login" method="POST" class="col-4 px-5">
+            <div class="mb-3">
+                <input type="text" class="form-control" id="email" name="email" placeholder="Email Address" value="ehv@gmail.com" email="email" required>
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password" value="pass123" email="password" required>
+            </div>
+            <div class="d-grid col-12">
+                <button class="mb-2 btn btn-primary" type="submit">Login</button>
+            </div>
+            <a class="text-decoration-none" href="/campgrounds">Go Back</a>
+        </form>
+    </div>
+</div>

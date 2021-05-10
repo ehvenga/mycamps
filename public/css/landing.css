@@ -1,0 +1,27 @@
+#carouselExampleSlidesOnly{
+  position:relative;
+  z-index:-1 !important;
+}
+
+.carousel-inner {
+  height: 100vh;  
+  object-fit: cover !important;
+}
+
+p {
+  font-weight: 400;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}

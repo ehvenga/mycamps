@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="/css/newcampground.css">
+{{>navbar}}
+<div class="container mt-4">
+    <p class="text-center fs-1 lh-1">Add New Campground</p>
+    <div class="d-flex justify-content-center">
+        <form action="/campgrounds/new" method="POST" enctype="multipart/form-data">
+            <div class="mb-2">
+                <label for="name" class="form-label lh-1">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Mount Cook Camping" value="Mount Cook Camping" name="name" required>
+            </div>
+            <div class="mb-2">
+                <label for="price" class="form-label lh-1">Price</label>
+                <div class="input-group">
+                    <div class="input-group-text">$</div>
+                    <input type="number" class="form-control" id="price" placeholder="50" value="50" step="0.01" name="price" required>
+                </div>
+            </div>
+            <div class="mb-2">
+                <label for="location" class="form-label lh-1">Location</label>
+                <input type="text" class="form-control" id="location" placeholder="Mount Cook National Park, New Zealand" value="New Zealand" name="location" required>
+            </div>
+            <div class="mb-2">
+                <label for="image" class="form-label lh-1">Image</label>
+                <input class="form-control" type="file" id="image" name="image" required>
+            </div>
+            <div class="mb-2">
+                <label for="description" class="form-label lh-1">Description</label>
+                <textarea class="form-control" id="description" placeholder="A full day stay at Mount Cook National Park." rows="3" name="description" required>Amazing Place</textarea>
+            </div>
+            <div class="d-grid col-12">
+                <button class="mt-2 mb-2 btn btn-primary" type="submit">Submit</button>
+            </div>
+            <a class="text-decoration-none" href="/campgrounds">Go Back</a>
+        </form>
+    </div>
+</div>
