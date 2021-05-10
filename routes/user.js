@@ -2,15 +2,7 @@ const express = require('express')
 const router = express.Router()
 const bcrypt = require('bcrypt')
 
-
 const UserModel = require('../models/User')
-
-// router.use(session({
-//     store: MongoStore.create({ mongoUrl: 'mongodb+srv://ehvenga:coding-challenge@coding-challenge.rte9h.mongodb.net/yelpcamp'}),
-//     secret: "%^TGY^%TRF5$RFT5r$Rftr5$t%$rt5t5rT%rr5$r4$rRT$Er4Rrf",
-//     resave: false,
-//     saveUninitialized: false
-// }))
 
 router.get('/signup', (req, res) => {
     res.render('signup')
@@ -78,7 +70,5 @@ router.post('/login', async (req,res) => {
 
     res.redirect('/campgrounds')
 })
-
-
 
 module.exports = router

@@ -49,11 +49,6 @@ app.use('/campgrounds', campRouter)
 app.use('/', userRouter)
 app.use('/', campgroundsRouter)
 
-// app.use(function (req, res, next){
-//     res.locals.session = req.session
-//     next()
-// })
-
 app.get('/', (req,res) => {
     res.render('landing')
 })

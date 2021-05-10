@@ -1,6 +1,5 @@
 const express = require('express')
 const router = express.Router()
-// const fileUpload = require('express-fileupload')
 const CampModel = require('../models/Camp')
 const multer  = require('multer')
 const upload = multer({ dest: 'uploads/' })
@@ -10,10 +9,11 @@ const path = require('path')
 router.use(express.urlencoded({extended: false}))
 
 router.get('/new', (req, res) => {
-    // if (req.session.isLoggedIn === true) {
-    //     res.render('newcampground')
-    // }
-    res.render('newcampground')
+    if (req.session.isLoggedIn === true) {
+        res.render('newcampground')
+        return
+    }
+    res.redirect('/login')
 })
 
 router.post('/new', upload.single('image') ,async (req, res) => {
