@@ -1,4 +1,4 @@
-# campsite
+# mycamps
 mycamops project is my first project building a full-stack web application called. mycamps is web-app where user generated content about outdoor activities (mainly camping) is hosted and maintained, allowing features such as posting a listing, editing and commenting on it. 
 
 # npm i
